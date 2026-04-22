@@ -32,6 +32,9 @@ class Recipe(models.Model):
         null=True,
     )
 
+    def __str__(self):
+        return self.title
+
 # EDITED
 # title description slug
 # preparation_time preparation_time_unit
